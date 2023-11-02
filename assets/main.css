@@ -1,0 +1,78 @@
+/* @keyframes example {
+    0% {d: path('M 100 500 C 325 325 , 325 325, 500 100');}
+    10% {d: path('M 100 500 C 275 275 , 275 275, 500 100');}
+    20% {d: path('M 100 500 C 320 320 , 320 320, 500 100');}
+    30% {d: path('M 100 500 C 280 280 , 280 280, 500 100');}
+    40% {d: path('M 100 500 C 315 315 , 315 315, 500 100');}
+    50% {d: path('M 100 500 C 285 285 , 285 285, 500 100');}
+    60% {d: path('M 100 500 C 310 310 , 310 310, 500 100');}
+    70% {d: path('M 100 500 C 290 290 , 290 290, 500 100');}
+    90% {d: path('M 100 500 C 305 305 , 305 305, 500 100');}
+    110% {d: path('M 100 500 C 295 295 , 295 295, 500 100');}
+    130% {d: path('M 100 500 C 300 300 , 300 300, 500 100');}
+}
+.container svg path{
+    width: 1000px;
+    height: 1000px;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+} */
+
+@keyframes eren {
+    0% {d: path('M 0 500 C 500 550 , 500 550, 1000 500');}
+    5% {d: path('M 0 500 C 500 450 , 500 450, 1000 500');}
+    10% {d: path('M 0 500 C 500 540 , 500 540, 1000 500');}
+    15% {d: path('M 0 500 C 500 460 , 500 460, 1000 500');}
+    20% {d: path('M 0 500 C 500 530 , 500 530, 1000 500');}
+    30% {d: path('M 0 500 C 500 470 , 500 470, 1000 500');}
+    40% {d: path('M 0 500 C 500 520 , 500 520, 1000 500');}
+    50% {d: path('M 0 500 C 500 480 , 500 480, 1000 500');}
+    60% {d: path('M 0 500 C 500 510 , 500 510, 1000 500');}
+    70% {d: path('M 0 500 C 500 490 , 500 490, 1000 500');}
+    80% {d: path('M 0 500 C 500 505 , 500 505, 1000 500');}
+    90% {d: path('M 0 500 C 500 495 , 500 495, 1000 500');}
+    100% {d: path('M 0 500 C 500 500 , 500 500, 1000 500');}
+}
+.container .box{
+    width: 800px;
+    height: 800px;
+    /* position: relative; */
+}
+/* .container .box .line{
+    animation-name: eren;
+    animation-duration: 1s;
+    animation-delay: -1s;
+    animation-iteration-count:1;
+    animation-fill-mode:backwards;
+} */
+.container .box svg{
+    /* position: absolute;
+    left:0;
+    top:10px; */
+    z-index: -1;
+}
+.svg-collision{
+    width: 800px;
+    height: 20px;
+    border: 1px solid black;
+    z-index: 1;
+    /* position: absolute;
+    left:0;
+    top:400px;
+    transform: rotate(-45deg); */
+}
+.svg-collision:hover{border-color: aqua;}
+/* .box:hover .line{
+    animation-name: eren;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+} */
+.svg-collision:hover #line{
+    stroke: red;
+    animation-name: eren;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+}
